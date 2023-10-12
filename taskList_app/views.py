@@ -10,7 +10,7 @@ from django.contrib import messages
 def home(request):
     avatar = None
     try:
-        avatar = ProfileImg.objects.get(user=request.user).profileImg
+        avatar = ProfileImg.objects.get(user=request.user).profileImg.url
     except:
         avatar = ""
 
