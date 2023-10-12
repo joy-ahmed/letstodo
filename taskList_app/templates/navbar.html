@@ -9,7 +9,7 @@
         <div class="d-lg-none ms-auto me-4">
           {% if request.user.is_authenticated %}
             <div class="d-flex justify-content-center align-items-center bg-info border border-dark-subtle rounded-circle"
-            style="width: 40px; height: 40px; background-image: url('{{avatar}}'); background-size: cover; background-position: center;">
+            style="width: 40px; height: 40px; background-image: url('{{avatar.url}}'); background-size: cover; background-position: center;">
             </div>
          {% endif %}
         </div>
